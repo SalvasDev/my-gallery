@@ -1,0 +1,312 @@
+:root {
+    --prim-font: 'Montserrat', sans-serif;
+
+    --back-color: white;
+    --gray-dark: #4E5150;
+    --gray-mid: #A9A9A9;
+    --gray-light: #E5E5E5;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--back-color); 
+    font-family: var(--prim-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.header-container {
+    width: min(95%, 97rem);
+    margin: 6rem auto 2.4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pic {
+    width: 15.6rem;
+    height: 15.6rem;
+    background-image: url(../img/SALVADOR\ SANCHEZ\ UX\ UI\ DESIGNER.jpg);
+    background-repeat: no-repeat, repeat;
+    border-radius: 2.4rem;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+}
+
+.name {
+    margin: 2rem auto .5rem auto;
+    font-size: 2.4rem;
+    color: var(--gray-dark);
+}
+
+
+.charge {
+    margin: 0 auto 2.4rem auto;
+    font-size: 1.4rem;
+    color: var(--gray-mid);
+}
+
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    column-gap: 2.4rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 6.7rem;
+    background-color: var(--gray-light);
+    border-radius: 1.2rem;
+}
+
+.cant {
+    color: var(--gray-dark);
+    font-size: 1.8rem;
+
+}
+
+.spec {
+    color: var(--gray-mid);
+    font-size: 1.2rem;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    width: min(95%, 97rem);
+    margin: 0 auto 15rem auto;
+    grid-template-areas: "area1 area2 area2"
+                         "area3 area3 area6"
+                         "area4 area5 area6";
+    grid-gap: 1.85rem;
+}
+
+.img-gallery1,
+.img-gallery2,
+.img-gallery3,
+.img-gallery4,
+.img-gallery5,
+.img-gallery6 {
+    background-color: var(--gray-mid);
+    border-radius: 1.2rem;
+  
+   
+}
+
+.img-gallery1 {
+    grid-area: area1;
+    background-image: url(../img/JANITZIO\ ARRIBA-01.png);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.img-gallery2 {
+    background-color: var(--gray-mid);
+    grid-area: area2;
+    height: 29.9rem;
+    background-image: url(../img/LETTERING\ GOOD\ THINGS-01.png);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-gallery3 {
+    grid-area: area3;
+    height: 29.9rem;
+    background-image: url(../img/Stationary\ \ completa\ diagonal\ 1.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-gallery4 {
+    grid-area: area4;
+    height: 29.9rem;
+    background-image: url(../img/Mockyup-MAC-DESK-CREFAL.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-gallery5 {
+    background-color: var(--gray-mid);
+    grid-area: area5;
+    height: 29.9rem;
+    background-image: url(../img/M1.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-gallery6{
+    grid-area: area6;
+    width: 29.9rem;
+    background-image: url(../img/ENTREPRENEUR-01.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer p {
+text-align: center;
+color: var(--gray-mid);
+
+}
+
+/* Mediaquries */
+
+ @media (max-width: 1068px){
+    .gallery {
+        width: min(95%, 72.75rem);
+        margin: 6rem auto 12rem auto;
+        grid-gap: 2.78rem;
+    }
+.img-gallery1,
+.img-gallery2,
+.img-gallery3,
+.img-gallery4,
+.img-gallery5
+{
+    height: 22.4rem;
+
+}
+.img-gallery6 {
+       width: 22.4rem;
+}
+
+}
+
+
+@media (max-width: 768px) {
+    .gallery {
+        width: min(95%, 48.5rem);
+        margin: 3rem auto 12rem auto;
+        grid-gap: 1.39rem;
+    }
+
+    .img-gallery1,
+    .img-gallery2,
+    .img-gallery3,
+    .img-gallery4,
+    .img-gallery5 {
+        height: 14.95rem;
+
+    }
+
+    .img-gallery6 {
+        width: 14.95rem;
+    }
+
+}
+
+@media (max-width: 523px) {
+.header-container {
+        width: min(95%, 38.8rem);
+        margin: 3rem auto 2.4rem auto;        
+    }  
+
+.statistics {
+    width: min(75%, 30rem);
+    column-gap: 1rem;
+}
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .charge {
+        font-size: 1rem;
+    }
+
+    .cant {
+        font-size: 1.2rem;
+    }
+
+    .spec {
+        font-size: .8rem;
+    }
+    .stat {
+        height: 5rem;
+    }
+
+    .gallery {
+        width: min(95%, 38.8rem);
+        margin: 1.5rem auto 3rem auto;
+        grid-gap: .74rem;
+    }
+
+    .img-gallery1,
+    .img-gallery2,
+    .img-gallery3,
+    .img-gallery4,
+    .img-gallery5 {
+        height: 12rem;
+
+    }
+
+    .img-gallery6 {
+        width: 12rem;
+    }
+
+}
+
+
+
+@media (max-width: 423px) {   
+
+    .gallery {
+        width: min(95%, 33.95rem);
+        margin: 1.5rem auto 6rem auto;
+        grid-gap: .65rem;
+    }
+
+    .img-gallery1,
+    .img-gallery2,
+    .img-gallery3,
+    .img-gallery4,
+    .img-gallery5 {
+        height: 10.46rem;
+
+    }
+
+    .img-gallery6 {
+        width: 10.46rem;
+    }
+
+}
